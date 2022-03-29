@@ -1,4 +1,6 @@
 const problemElement = document.querySelector('.problem');
+const ourForm = document.querySelector('our-form');
+
 
 let state = {
   score: 0,
@@ -25,3 +27,8 @@ function generateProblem() {
   }
 }
  
+ourForm.addEventListener("submit", handleSubmit);
+
+function handleSubmit(e) { 
+  e.preventDefault()
+}
